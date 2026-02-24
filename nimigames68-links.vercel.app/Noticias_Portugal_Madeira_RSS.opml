@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<opml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.0">
+  <head>
+    <title>Newsflow</title>
+  </head>
+  <body>
+    <outline title="Renascença">
+      <outline htmlUrl="https://rr.pt/bola-branca" text="Renascença - Bola Branca" title="Renascença - Bola Branca" xmlUrl="https://rr.pt/rss/rssfeed.aspx?fid=2" />
+      <outline htmlUrl="https://rr.pt/" text="Renascença" title="Renascença" xmlUrl="https://rr.pt/rssfeed-ultimas" />
+    </outline>
+    <outline title="Grupo Medialivre">
+      <outline htmlUrl="https://www.sabado.pt/" text="Sábado" title="Sábado" xmlUrl="https://www.sabado.pt/rss" />
+      <outline htmlUrl="https://www.nowcanal.pt/" text="Now Canal" title="Now Canal" xmlUrl="https://www.nowcanal.pt/rss" />
+      <outline htmlUrl="https://www.jornaldenegocios.pt/" text="Jornal de Negocios" title="Jornal de Negocios" xmlUrl="https://www.jornaldenegocios.pt/rss" />
+      <outline htmlUrl="https://www.record.pt/" text="Record" title="Record" xmlUrl="https://www.record.pt/rss" />
+      <outline htmlUrl="https://www.cmjornal.pt/" text="Correio da Manhã" title="Correio da Manhã" xmlUrl="https://www.cmjornal.pt/rss" />
+    </outline>
+    <outline title="ZeroZero">
+      <outline htmlUrl="https://www.zerozero.pt/" text="zerozero - Resultados" title="zerozero - Resultados" xmlUrl="https://www.zerozero.pt/rss/resultados.php" />
+      <outline htmlUrl="https://www.zerozero.pt/" text="zerozero - Notícias" title="zerozero - Notícias" xmlUrl="https://www.zerozero.pt/rss/noticias.php" />
+    </outline>
+    <outline title="SAPO">
+      <outline htmlUrl="https://24noticias.sapo.pt" text="24Notícias - SAPO" title="24Notícias - SAPO" xmlUrl="https://24noticias.sapo.pt/rss" />
+      <outline htmlUrl="http://sportinforma.sapo.pt" text="Sportinforma - SAPO" title="Sportinforma - SAPO" xmlUrl="https://sportinforma.sapo.pt/rss" />
+      <outline htmlUrl="https://sapo.pt/" text="SAPO" title="SAPO" xmlUrl="https://www.sapo.pt/rss" />
+      <outline htmlUrl="https://tek.sapo.pt" text="Tek Notícias - SAPO" title="Tek Notícias - SAPO" xmlUrl="https://tek.sapo.pt/rss" />
+    </outline>
+    <outline title="RTP Notícias">
+      <outline htmlUrl="https://www.rtp.pt" text="RTP Notícias - Desporto" title="RTP Notícias - Desporto" xmlUrl="https://www.rtp.pt/noticias/rss/desporto" />
+      <outline htmlUrl="https://www.rtp.pt" text="RTP Notícias - Mundo" title="RTP Notícias - Mundo" xmlUrl="https://www.rtp.pt/noticias/rss/mundo" />
+    </outline>
+    <outline title="Grupo IOL">
+      <outline htmlUrl="https://maisfutebol.iol.pt/ultimas" text="MAISFUTEBOL" title="MAISFUTEBOL" xmlUrl="https://maisfutebol.iol.pt/rss" />
+      <outline htmlUrl="https://www.iol.pt" text="Notícias - IOL" title="Notícias - IOL" xmlUrl="https://www.iol.pt/rss" />
+      <outline htmlUrl="https://cnnportugal.iol.pt" text="CNN Portugal" title="CNN Portugal" xmlUrl="https://cnnportugal.iol.pt/rss" />
+      <outline htmlUrl="https://tvi.iol.pt" text="TVI Notícias" title="TVI Notícias" xmlUrl="https://tvi.iol.pt/noticias/rss" />
+    </outline>
+    <outline title="Notícias ao Minuto">
+      <outline htmlUrl="https://www.noticiasaominuto.com/desporto" text="Notícias ao Minuto - Desporto" title="Notícias ao Minuto - Desporto" xmlUrl="https://www.noticiasaominuto.com/rss/desporto" />
+      <outline htmlUrl="https://www.noticiasaominuto.com/pais" text="Notícias ao Minuto - País" title="Notícias ao Minuto - País" xmlUrl="https://www.noticiasaominuto.com/rss/pais" />
+      <outline htmlUrl="https://www.noticiasaominuto.com/mundo" text="Notícias ao Minuto - Mundo" title="Notícias ao Minuto - Mundo" xmlUrl="https://www.noticiasaominuto.com/rss/mundo" />
+      <outline htmlUrl="https://www.noticiasaominuto.com/tech" text="Notícias ao Minuto - Tech" title="Notícias ao Minuto - Tech" xmlUrl="https://www.noticiasaominuto.com/rss/tech" />
+    </outline>
+    <outline title="Outros - Noticias">
+      <outline htmlUrl="https://postal.pt/" text="Postal" title="Postal" xmlUrl="https://postal.pt/feed/" />
+      <outline htmlUrl="https://zap.aeiou.pt/" text="ZAP Notícias" title="ZAP Notícias" xmlUrl="https://zap.aeiou.pt/feed" />
+      <outline htmlUrl="https://sicnoticias.pt/" text="SIC Notícias" title="SIC Notícias" xmlUrl="https://rss.impresa.pt/feed/latest/sicnot.rss?type=ARTICLE,VIDEO,GALLERY,STREAM,PLAYLIST,EVENT,NEWSLETTER&amp;limit=20&amp;pubsubhub=true" />
+      <outline htmlUrl="https://funchalnoticias.net" text="Funchal Notícias" title="Funchal Notícias" xmlUrl="https://funchalnoticias.net/feed/" />
+      <outline htmlUrl="https://www.publico.pt/" text="Público" title="Público" xmlUrl="http://feeds.feedburner.com/PublicoRSS" />
+      <outline htmlUrl="https://www.jm-madeira.pt/" text="JM Madeira" title="JM Madeira" xmlUrl="https://politepaul.com/fd/snN2uKhITNib.xml" />
+      <outline htmlUrl="http://www.dnoticias.pt/rss.xml" text="DNotícias" title="DNotícias" xmlUrl="https://www.dnoticias.pt/rss.xml" />
+      <outline htmlUrl="https://observador.pt" text="Observador" title="Observador" xmlUrl="https://observador.pt/feed/" />
+      <outline htmlUrl="https://www.netmadeira.com/noticias/madeira" title="NetMadeira - Noticias - Madeira" xmlUrl="https://politepaul.com/fd/F9FNcFF7Zi5g.xml" />
+    </outline>
+    <outline title="Outros - Desporto">
+      <outline htmlUrl="https://tribuna.expresso.pt/" text="Tribuna Expresso" title="Tribuna Expresso" xmlUrl="https://rss.impresa.pt/feed/latest/olimpia.rss?type=ARTICLE,VIDEO,GALLERY,STREAM,PLAYLIST,EVENT,NEWSLETTER&amp;limit=20&amp;pubsubhub=true" />
+      <outline htmlUrl="https://bolanarede.pt/" text="Bola na Rede" title="Bola na Rede" xmlUrl="https://bolanarede.pt/feed/" />
+      <outline htmlUrl="https://www.abola.pt" text="A Bola" title="A Bola" xmlUrl="https://www.abola.pt/rss-articles.xml" />
+      <outline htmlUrl="https://www.ligaportugal.pt/noticias" title="Liga Portugal - Notícias" xmlUrl="https://politepaul.com/fd/yUcWkU1shWDs.xml" />
+      <outline htmlUrl="https://www.netmadeira.com/noticias/desporto" title="NetMadeira - Noticias - Desporto" xmlUrl="https://politepaul.com/fd/RbGb8X0kVGjf.xml" />
+    </outline>
+    <outline title="Outros - Tech">
+      <outline htmlUrl="https://www.maistecnologia.com/" text="MaisTecnologia" title="MaisTecnologia" xmlUrl="https://www.maistecnologia.com/feed/" />
+      <outline htmlUrl="https://www.blogger.com/feeds/1408019334890156729/posts/default?start-index=8&amp;max-results=7&amp;redirect=false" text="Aberto até de Madrugada" title="Aberto até de Madrugada" xmlUrl="http://feeds.feedburner.com/abertoatedemadrugada" />
+      <outline htmlUrl="https://www.pcguia.pt" text="PCGuia" title="PCGuia" xmlUrl="https://www.pcguia.pt/feed/" />
+      <outline htmlUrl="https://androidgeek.pt" text="AndroidGeek" title="AndroidGeek" xmlUrl="https://androidgeek.pt/feed" />
+      <outline htmlUrl="https://www.eurogamer.pt/feed" text="EuroGamer" title="EuroGamer" xmlUrl="https://www.eurogamer.pt/feed" />
+      <outline htmlUrl="https://pplware.sapo.pt/" text="Pplware" title="Pplware" xmlUrl="https://pplware.sapo.pt/feed/" />
+      <outline htmlUrl="https://4gnews.pt/" text="4gNews" title="4gNews" xmlUrl="https://4gnews.pt/feed/" />
+      <outline htmlUrl="https://www.netmadeira.com/noticias/tecnologia" title="NetMadeira - Noticias - Tecnologia" xmlUrl="https://politepaul.com/fd/2db2CMn0y731.xml" />
+      <outline htmlUrl="https://support.microsoft.com" text="Suporte da Microsoft" title="Suporte da Microsoft - Windows 11" xmlUrl="https://support.microsoft.com/pt-pt/feed/rss/4ec863cc-2ecd-e187-6cb3-b50c6545db92" />
+      <outline htmlUrl="https://blog.google/intl/pt-pt/" text="The Keyword Portugal" title="Google Blog Portugal" xmlUrl="https://blog.google/intl/pt-pt/rss/" />
+      <outline htmlUrl="https://supercell.com/en/games/clashroyale/pt/blog/" title="Clash Royale News" xmlUrl="https://politepaul.com/fd/r9mCeGU5JSIc.xml" />
+    </outline>
+    <outline htmlUrl="https://www.leak.pt/tecnologia/" title="Tecnologia | Leak" xmlUrl="https://politepol.com/fd/kff2ndyQCHVP.xml" />
+    <outline htmlUrl="https://news.microsoft.com/source/emea/region/portugal/?lang=pt-pt/" title="Microsoft News" xmlUrl="https://politepaul.com/fd/NeIeDuKQyuAM.xml" />
+  </body>
+</opml>
