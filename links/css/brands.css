@@ -1,0 +1,232 @@
+/*
+* LittleLink Button Styles
+* https://littlelink.io
+* Free to use under the MIT license
+* http://www.opensource.org/licenses/mit-license.php
+*/
+
+/* Brand Button Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Only include brand-specific button styling here */
+.button,button {
+  color:var(--button-text,#000000);
+  background-color:var(--button-background,#ffffff);
+	border:var(--button-border,1px solid #141414);
+	transition:filter 0.5s ease,transform 0.5s ease;
+}
+
+/* Global Button Hover Effect
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button:hover,button:hover {
+	filter:brightness(90%);
+	transform:translateY(-1px);
+}
+
+/* Button Icons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.icon {
+	filter:var(--icon-filter,none);
+}
+
+/* Brand-Specific Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Default */
+.button.button-default {
+	--button-text:#000000;
+	--button-background:#ffffff;
+	--button-border:1px solid #141414;
+}
+
+/* Zoom */
+.button-zoom {
+	--button-text:#ffffff;
+	--button-background:#0B5CFF;
+  --button-border:1px solid #FFFFFF;
+}
+/* Last.fm */
+.button.button-lastfm {
+	--button-text:#000000;
+	--button-background:#ffffff;
+	--button-border:1px solid #141414;
+}
+
+/* TikTok */
+.button.button-tiktok {
+	--button-text:#000000;
+	--button-background:#ffffff;
+	--button-border:1px solid #141414;
+}
+
+/* Spotify */
+.button.button-spotify {
+	--button-text:#000000;
+	--button-background:#ffffff;
+	--button-border:1px solid #141414;
+}
+
+/* Discord */
+.button.button-discord {
+	--button-text:#000000;
+	--button-background:#ffffff;
+	--button-border:1px solid #141414;
+}
+
+/* Discord Server */
+.button.button-discord-server {
+	--button-text:#000000;
+	--button-background:#ffffff;
+	--button-border:1px solid #141414;
+}
+
+/* Twitch */
+.button.button-twitch {
+	--button-text:#000000;
+	--button-background:#ffffff;
+	--button-border:1px solid #141414;
+}
+
+/* Twitter */
+.button.button-twitter {
+	--button-text:#000000;
+	--button-background:#ffffff;
+	--button-border:1px solid #141414;
+}
+
+/* Exophase */
+.button.button-exophase {
+	--button-text:#000000;
+	--button-background:#ffffff;
+	--button-border:1px solid #141414;
+}
+
+/* PlayStation */
+.button.button-playstation {
+	--button-text:#000000;
+	--button-background:#ffffff;
+	--button-border:1px solid #141414;
+}
+
+/* Xbox */
+.button.button-xbox {
+	--button-text:#000000;
+	--button-background:#ffffff;
+	--button-border:1px solid #141414;
+}
+
+/* Steam */
+.button.button-steam {
+	--button-text:#000000;
+	--button-background:#ffffff;
+	--button-border:1px solid #141414;
+}
+
+/* Google Play Games */
+.button.button-google-play-games {
+	--button-text:#000000;
+	--button-background:#ffffff;
+	--button-border:1px solid #141414;
+}
+
+/* Instagram */
+.button.button-instagram {
+	--button-text:#000000;
+	--button-background:#ffffff;
+	--button-border:1px solid #141414;
+}
+
+/* GitHub */
+.button.button-github {
+	--button-text:#000000;
+	--button-background:#ffffff;
+	--button-border:1px solid #141414;
+}
+
+/* Reddit */
+.button.button-reddit {
+	--button-text:#000000;
+	--button-background:#ffffff;
+	--button-border:1px solid #141414;
+}
+
+/* Drippi */
+.button.button-drippi {
+	--button-text:#000000;
+	--button-background:#ffffff;
+  --button-border:1px solid #141414;
+}
+
+/* Trakt */
+.button.button-trakt {
+	--button-text:#000000;
+	--button-background:#ffffff;
+	--button-border:1px solid #141414;
+}
+
+/* YouTube */
+.button.button-youtube {
+	--button-text:#000000;
+	--button-background:#ffffff;
+	--button-border:1px solid #141414;
+}
+
+/* PresenceDB */
+.button.button-presencedb {
+	--button-text:#000000;
+	--button-background:#ffffff;
+	--button-border:1px solid #141414;
+}
+
+/* Threads */
+.button.button-threads {
+	--button-text:#000000;
+	--button-background:#ffffff;
+	--button-border:1px solid #141414;
+}
+
+/* BlueSky */
+.button.button-bluesky {
+	--button-text:#000000;
+	--button-background:#ffffff;
+	--button-border:1px solid #141414;
+}
+
+/* Playlist Rádios da Madeira */
+.button.button-playlist-radios-da-madeira {
+	--button-text:#000000;
+	--button-background:#ffffff;
+	--button-border:1px solid #141414;
+}
+
+/* Ficheiro OPML Notícias de Portugal */
+.button.button-opml-noticias-de-portugal {
+	--button-text:#000000;
+	--button-background:#ffffff;
+	--button-border:1px solid #141414;
+}
+
+/* NexusPT */
+.button.button-nexuspt {
+	--button-text:#000000;
+	--button-background:#ffffff;
+	--button-border:1px solid #141414;
+}
+/* Music Presence */
+.button.button-music-presence {
+	--button-text:#000000;
+	--button-background:#ffffff;
+	--button-border:1px solid #141414;
+}
+
+/* nimigames68.github.io */
+.button.button-nimigames68-github-io {
+	--button-text:#000000;
+	--button-background:#ffffff;
+	--button-border:1px solid #141414;
+}
+/* Default */
+.button.button-default {
+	--button-text:#000000;
+	--button-background:#ffffff;
+	--button-border:1px solid #141414;
+}
