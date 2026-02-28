@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NimiGames68</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #111111;
+      --accent: #43C97E;
+      --text: #d4d4d4;
+      --muted: #666;
+      --nav-height: 64px;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 300;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: var(--nav-height);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2.5rem;
+      background: rgba(17,17,17,0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid #1e1e1e;
+      z-index: 100;
+    }
+    .nav-logo {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+      letter-spacing: -0.02em;
+      transition: color 0.2s;
+    }
+    .nav-logo:hover { color: var(--accent); }
+    .nav-links {
+      display: flex;
+      gap: 0.25rem;
+      list-style: none;
+    }
+    .nav-links a {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.82rem;
+      font-weight: 400;
+      color: var(--muted);
+      text-decoration: none;
+      padding: 0.4rem 0.85rem;
+      border-radius: 6px;
+      transition: color 0.2s, background 0.2s;
+    }
+    .nav-links a:hover {
+      color: var(--accent);
+      background: rgba(67,201,126,0.07);
+    }
+    main {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: calc(var(--nav-height) + 4rem) 2.5rem 4rem;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .hero { animation: fadeUp 0.7s ease both; }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .hero h1 {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.03em;
+      margin-bottom: 1.8rem;
+      line-height: 1.2;
+    }
+    .wave {
+      display: inline-block;
+      animation: wave 2s ease-in-out infinite;
+      transform-origin: 70% 70%;
+    }
+    @keyframes wave {
+      0%,100% { transform: rotate(0deg); }
+      20%      { transform: rotate(20deg); }
+      40%      { transform: rotate(-10deg); }
+      60%      { transform: rotate(15deg); }
+      80%      { transform: rotate(-5deg); }
+    }
+    .lines { display: flex; flex-direction: column; gap: 0.85rem; }
+    .line {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--text);
+      opacity: 0;
+      animation: fadeUp 0.5s ease forwards;
+    }
+    .line:nth-child(1) { animation-delay: 0.15s; }
+    .line:nth-child(2) { animation-delay: 0.25s; }
+    .line:nth-child(3) { animation-delay: 0.35s; }
+    .line:nth-child(4) { animation-delay: 0.45s; }
+    .line:nth-child(5) { animation-delay: 0.55s; }
+    .line a {
+      color: var(--muted);
+      text-decoration: underline;
+      text-decoration-color: transparent;
+      text-underline-offset: 3px;
+      transition: color 0.2s, text-decoration-color 0.2s;
+    }
+    .line a:hover {
+      color: var(--accent);
+      text-decoration-color: var(--accent);
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+      z-index: 0;
+    }
+    nav, main { position: relative; z-index: 1; }
+    @media (max-width: 600px) {
+      nav { padding: 0 1.2rem; }
+      .nav-links a { padding: 0.35rem 0.5rem; font-size: 0.75rem; }
+      main { padding-left: 1.4rem; padding-right: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="nav-logo" href="https://nimigames68.github.io/">NimiGames68</a>
+    <ul class="nav-links">
+      <li><a href="https://nimigames68.github.io/music/">Music</a></li>
+      <li><a href="https://nimigames68.github.io/madeira-island/">Madeira Islands</a></li>
+      <li><a href="https://nimigames68.github.io/internet-privacy/">Internet Privacy</a></li>
+      <li><a href="https://nimigames68.github.io/software-i-like/">Software I Like</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="hero">
+      <h1>Hi! I'm NimiGames68 <span class="wave">👋</span></h1>
+      <div class="lines">
+        <p class="line">I'm from Madeira Island, Portugal 🏝️🇵🇹</p>
+        <p class="line">I like Portuguese music 🎵</p>
+        <p class="line">I'm obsessed with open-source apps and online privacy 👨‍💻</p>
+        <p class="line">He/Him 🔵</p>
+        <p class="line">I make websites, nothing too crazy — you can find them in the repositories tab on my <a href="https://github.com/NimiGames68?tab=repositories" target="_blank">GitHub</a> profile.</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
