@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NimiGames68 — Madeira Island</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="https://nimigames68.github.io/">NimiGames68</a>
+  <ul class="nav-links">
+    <li><a href="https://nimigames68.github.io/music/">Music</a></li>
+    <li><a href="https://nimigames68.github.io/madeira-island/">Madeira Islands</a></li>
+    <li><a href="https://nimigames68.github.io/software/">Software</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+
+  <span class="section-label">Madeira Island</span>
+  <h1>Ilha da Madeira 🏝️</h1>
+  <p class="subtitle">Autonomous Region of Portugal, Atlantic Ocean</p>
+
+  <div class="map-wrap">
+    <div class="map-toggle">
+      <button id="btn-map" class="active" onclick="switchMap('map')">🗺️ Map</button>
+      <button id="btn-satellite" onclick="switchMap('satellite')">🛰️ Satellite</button>
+    </div>
+    <div class="map-frame-wrap">
+      <iframe id="frame-map"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d446326.69771275745!2d-16.718968249455376!3d32.760296064415215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-PT!2spt!4v1773170060993!5m2!1spt-PT!2spt"
+        allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe id="frame-satellite" class="hidden"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d446326.69771275745!2d-16.718968249455376!3d32.760296064415215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-PT!2spt!4v1773170060993!5m2!1spt-PT!2spt"
+        allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+  <span class="section-label">Municipalities & Parishes</span>
+  <div class="accordion" id="accordion"></div>
+
+  <hr class="section-divider">
+  <span class="section-label">Coordinates</span>
+  <p class="coords"><span>32.6669° N</span> &nbsp;/&nbsp; <span>16.9241° W</span></p>
+
+  <hr class="section-divider">
+  <span class="section-label">Where in the world</span>
+  <div class="location-img-wrap">
+    <img class="location-img" src="../EU-Portugal_with_Madeira_circled.svg" alt="Portugal map with Madeira circled">
+  </div>
+
+  <hr class="section-divider">
+  <span class="section-label">Fun Facts</span>
+  <ul class="facts">
+    <li>Did you know Portugal's 3rd biggest mountain is in Madeira, and it's called Pico Ruivo?</li>
+    <li>Did you know the island is closer to Africa than Europe?</li>
+    <li>This island is the paradise for tourists.</li>
+    <li>Did you know you would need a good driver to drive around here?</li>
+  </ul>
+
+</div>
+
+<footer>
+  <a href="https://nimigames68.github.io/links">Social Media</a>
+  <a href="mailto:nimigames68@tutamail.com">E-mail</a>
+  <a href="https://github.com/NimiGames68/NimiGames68.github.io">Repository</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
