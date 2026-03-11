@@ -1,4 +1,3 @@
-// ── Map toggle ──────────────────────────────────────────────────────────────
 function switchMap(type) {
   document.getElementById('frame-map').classList.toggle('hidden', type !== 'map');
   document.getElementById('frame-satellite').classList.toggle('hidden', type !== 'satellite');
@@ -6,7 +5,6 @@ function switchMap(type) {
   document.getElementById('btn-satellite').classList.toggle('active', type === 'satellite');
 }
 
-// ── Accordion data (alphabetical order) ────────────────────────────────────
 var MUNICIPALITIES = [
   { name: "Calheta",          freguesias: ["Arco da Calheta","Calheta","Estreito da Calheta","Fajã da Ovelha","Jardim do Mar","Paul do Mar","Ponta do Pargo","Prazeres"] },
   { name: "Câmara de Lobos",  freguesias: ["Câmara de Lobos","Curral das Freiras","Estreito de Câmara de Lobos","Jardim da Serra","Quinta Grande"] },
