@@ -97,7 +97,6 @@ a.section-label:hover { color: var(--accent); }
   margin: 3rem 0;
 }
 
-/* HERO */
 .hero { animation: fadeUp 0.7s ease both; }
 .hero h1 {
   font-family: 'JetBrains Mono', monospace;
@@ -142,7 +141,6 @@ a.section-label:hover { color: var(--accent); }
 }
 .line a:hover { color: var(--accent); text-decoration-color: var(--accent); }
 
-/* MUSIC */
 .music-section { animation: fadeUp 0.7s 0.2s ease both; }
 .music-status { font-size: 0.75rem; color: #666666; margin-bottom: 1rem; letter-spacing: 0.02em; }
 .music-content { display: flex; gap: 1.2rem; align-items: center; }
