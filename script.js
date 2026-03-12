@@ -1,3 +1,4 @@
+//hey, if you are seeing that 2a96cbd8b46e442fc41c2b86b821562f, it's not an API key, it's just the placeholder image for when last.fm does not have the album cover
 async function getCover(lastfmCover, title, artist) {
   if (lastfmCover && lastfmCover.indexOf("2a96cbd8b46e442fc41c2b86b821562f") === -1) {
     return lastfmCover;
