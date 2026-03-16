@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NimiGames68 - Madeira Island</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://raw.githubusercontent.com/NimiGames68/NimiGames68.github.io/refs/heads/main/Images/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <script async src="https://nimigames-lastfm-proxy-api.vercel.app/proxy.js"></script>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="https://nimigames68.github.io/">NimiGames68</a>
+  <ul class="nav-links">
+    <li><a href="https://nimigames68.github.io/music/">Music</a></li>
+    <li><a href="https://nimigames68.github.io/madeira-island/">Madeira Islands</a></li>
+    <li><a href="https://nimigames68.github.io/tech/">Tech</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+
+  <span class="section-label">Madeira Island</span>
+  <h1>Madeira Island</h1>
+  <p class="subtitle">Autonomous Region of Madeira, Portugal</p>
+
+  <!-- MAP -->
+  <div class="map-wrap">
+    <div class="map-frame-wrap">
+      <iframe id="osm_canvas" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="about:blank"></iframe>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- ACCORDION -->
+  <span class="section-label">Municipalities & Parishes</span>
+  <div class="accordion" id="accordion"></div>
+
+  <hr class="section-divider">
+
+  <!-- FLAG — moved up, just below accordion -->
+  <span class="section-label">Flag of Madeira</span>
+  <div class="flag-wrap">
+    <img class="flag-img" src="images/Flag_of_Madeira.svg" alt="Flag of Madeira">
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- WEATHER & TIME -->
+  <span class="section-label">Right Now in Madeira</span>
+  <div class="info-row">
+    <div class="info-card" id="weather-card">
+      <span class="info-card-label">Temperature</span>
+      <div class="info-card-value" id="temp-value">Loading...</div>
+      <div class="temp-switch" id="temp-switch" style="display:none;">
+        <button id="btn-c" class="temp-btn active" onclick="showCelsius()">°C</button>
+        <button id="btn-f" class="temp-btn" onclick="showFahrenheit()">°F</button>
+      </div>
+    </div>
+    <a class="info-card info-card-link" href="https://time.is/Funchal" target="_blank" rel="noopener">
+      <span class="info-card-label">Local Time</span>
+      <div class="info-card-value" id="time-value">--:--</div>
+      <div class="info-card-sub">Click to check on time.is</div>
+    </a>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- COORDINATES -->
+  <span class="section-label">Coordinates</span>
+  <p class="coords"><span>32.6669° N</span> &nbsp;/&nbsp; <span>16.9241° W</span></p>
+
+  <hr class="section-divider">
+
+  <!-- WHERE IN THE WORLD -->
+  <span class="section-label">Where in the world</span>
+  <div class="location-viewer">
+    <div class="viewer-controls">
+      <button class="zoom-btn" id="btn-zoomin" title="Zoom in">+</button>
+      <button class="zoom-btn" id="btn-zoomout" title="Zoom out">−</button>
+      <button class="zoom-btn zoom-btn-reset" id="btn-reset" title="Reset">↺</button>
+    </div>
+    <div class="viewer-canvas" id="viewer-canvas">
+      <img class="location-img" id="location-img" src="images/EU-Portugal_with_Madeira_circled.svg" alt="Portugal map with Madeira circled" draggable="false">
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- FUN FACTS -->
+  <span class="section-label">Fun Facts</span>
+  <ul class="facts">
+    <li>Did you know Portugal's 3rd biggest mountain is in Madeira, and it's called Pico Ruivo?</li>
+    <li>Did you know the island is closer to Africa than Europe?</li>
+    <li>This island is the paradise for tourists.</li>
+    <li>Did you know you would need a good driver to drive around here?</li>
+  </ul>
+
+</div>
+
+<footer>
+  <a href="https://nimigames68.github.io/links">Social Media</a>
+  <a href="mailto:nimi%67am%65s68%40tuta%6Dail%2E%63om">E-mail</a>
+  <a href="https://github.com/NimiGames68/NimiGames68.github.io">Repository</a>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  // OSM map
+  var iframe = document.getElementById('osm_canvas');
+  var doc = iframe.contentDocument || iframe.contentWindow.document;
+  doc.open();
+  doc.write('<!DOCTYPE html><html><head>');
+  doc.write('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.min.css"/>');
+  doc.write('<style>*{margin:0;padding:0;box-sizing:border-box;}html,body,#map{width:100%;height:100%;background:#111;}</style>');
+  doc.write('</head><body>');
+  doc.write('<div id="map" style="width:100%;height:100%;"></div>');
+  doc.write('<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.min.js"><\/script>');
+  doc.write('<script>');
+  doc.write('var map=L.map("map",{center:[32.7517501,-16.9817487],zoom:9});');
+  doc.write('map.attributionControl.setPrefix(\'&copy; <a target="_blank" href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>\');');
+  doc.write('L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);');
+  doc.write('var marker=L.marker([32.7517501,-16.9817487]).addTo(map);');
+  doc.write('marker.on("mouseover",function(){marker.openPopup();});');
+  doc.write('<\/script></body></html>');
+  doc.close();
+
+  // Weather (Open-Meteo, free, no API key)
+  var tempC = null, tempF = null;
+  fetch('https://api.open-meteo.com/v1/forecast?latitude=32.6669&longitude=-16.9241&current_weather=true&temperature_unit=celsius')
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      tempC = d.current_weather.temperature;
+      tempF = Math.round(tempC * 9/5 + 32);
+      document.getElementById('temp-value').textContent = tempC + ' °C';
+      document.getElementById('temp-switch').style.display = 'flex';
+    })
+    .catch(function(){ document.getElementById('temp-value').textContent = 'Unavailable'; });
+
+  function showCelsius() {
+    document.getElementById('temp-value').textContent = tempC + ' °C';
+    document.getElementById('btn-c').classList.add('active');
+    document.getElementById('btn-f').classList.remove('active');
+  }
+  function showFahrenheit() {
+    document.getElementById('temp-value').textContent = tempF + ' °F';
+    document.getElementById('btn-f').classList.add('active');
+    document.getElementById('btn-c').classList.remove('active');
+  }
+
+  // Pan + zoom viewer
+  (function() {
+    var canvas = document.getElementById('viewer-canvas');
+    var img    = document.getElementById('location-img');
+    var scale  = 1, minScale = 1, maxScale = 5;
+    var tx = 0, ty = 0;
+    var dragging = false, startX, startY, startTx, startTy;
+
+    function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
+
+    function applyTransform() {
+      img.style.transform = 'translate(' + tx + 'px, ' + ty + 'px) scale(' + scale + ')';
+      canvas.style.cursor = scale > 1 ? (dragging ? 'grabbing' : 'grab') : 'default';
+    }
+
+    function constrainPan() {
+      var cw = canvas.clientWidth, ch = canvas.clientHeight;
+      var iw = img.naturalWidth || img.clientWidth;
+      var ih = img.naturalHeight || img.clientHeight;
+      var maxTx = Math.max(0, (iw * scale - cw) / 2);
+      var maxTy = Math.max(0, (ih * scale - ch) / 2);
+      tx = clamp(tx, -maxTx, maxTx);
+      ty = clamp(ty, -maxTy, maxTy);
+    }
+
+    function setScale(newScale, cx, cy) {
+      var cw = canvas.clientWidth, ch = canvas.clientHeight;
+      cx = cx !== undefined ? cx : cw / 2;
+      cy = cy !== undefined ? cy : ch / 2;
+      var ratio = newScale / scale;
+      tx = cx - ratio * (cx - tx);
+      ty = cy - ratio * (cy - ty);
+      scale = newScale;
+      constrainPan();
+      applyTransform();
+    }
+
+    function reset() { scale = 1; tx = 0; ty = 0; applyTransform(); }
+
+    document.getElementById('btn-zoomin').addEventListener('click', function() {
+      setScale(clamp(scale * 1.4, minScale, maxScale));
+    });
+    document.getElementById('btn-zoomout').addEventListener('click', function() {
+      setScale(clamp(scale / 1.4, minScale, maxScale));
+    });
+    document.getElementById('btn-reset').addEventListener('click', reset);
+
+    // Mouse drag
+    canvas.addEventListener('mousedown', function(e) {
+      if (scale <= 1) return;
+      dragging = true; startX = e.clientX; startY = e.clientY; startTx = tx; startTy = ty;
+      canvas.style.cursor = 'grabbing'; e.preventDefault();
+    });
+    window.addEventListener('mousemove', function(e) {
+      if (!dragging) return;
+      tx = startTx + (e.clientX - startX);
+      ty = startTy + (e.clientY - startY);
+      constrainPan(); applyTransform();
+    });
+    window.addEventListener('mouseup', function() {
+      dragging = false; if (scale > 1) canvas.style.cursor = 'grab';
+    });
+
+    // Touch drag + pinch
+    var lastDist = null, lastTouchTx, lastTouchTy, touchStartX, touchStartY;
+    canvas.addEventListener('touchstart', function(e) {
+      if (e.touches.length === 1) {
+        touchStartX = e.touches[0].clientX; touchStartY = e.touches[0].clientY;
+        lastTouchTx = tx; lastTouchTy = ty;
+      } else if (e.touches.length === 2) {
+        var dx = e.touches[0].clientX - e.touches[1].clientX;
+        var dy = e.touches[0].clientY - e.touches[1].clientY;
+        lastDist = Math.sqrt(dx*dx + dy*dy);
+      }
+      e.preventDefault();
+    }, { passive: false });
+    canvas.addEventListener('touchmove', function(e) {
+      if (e.touches.length === 1 && scale > 1) {
+        tx = lastTouchTx + (e.touches[0].clientX - touchStartX);
+        ty = lastTouchTy + (e.touches[0].clientY - touchStartY);
+        constrainPan(); applyTransform();
+      } else if (e.touches.length === 2) {
+        var dx = e.touches[0].clientX - e.touches[1].clientX;
+        var dy = e.touches[0].clientY - e.touches[1].clientY;
+        var dist = Math.sqrt(dx*dx + dy*dy);
+        if (lastDist) {
+          var midX = (e.touches[0].clientX + e.touches[1].clientX) / 2 - canvas.getBoundingClientRect().left;
+          var midY = (e.touches[0].clientY + e.touches[1].clientY) / 2 - canvas.getBoundingClientRect().top;
+          setScale(clamp(scale * dist / lastDist, minScale, maxScale), midX, midY);
+        }
+        lastDist = dist;
+      }
+      e.preventDefault();
+    }, { passive: false });
+    canvas.addEventListener('touchend', function() { lastDist = null; });
+
+    // Scroll wheel zoom
+    canvas.addEventListener('wheel', function(e) {
+      e.preventDefault();
+      var rect = canvas.getBoundingClientRect();
+      var cx = e.clientX - rect.left, cy = e.clientY - rect.top;
+      var factor = e.deltaY < 0 ? 1.15 : 1/1.15;
+      setScale(clamp(scale * factor, minScale, maxScale), cx, cy);
+    }, { passive: false });
+
+    applyTransform();
+  })();
+
+  // Local time clock (Madeira = UTC+0 in winter, UTC+1 in summer — use Intl)
+  function updateTime() {
+    var now = new Date();
+    var timeStr = now.toLocaleTimeString('en-GB', { timeZone: 'Atlantic/Madeira', hour: '2-digit', minute: '2-digit', second: '2-digit' });
+    document.getElementById('time-value').textContent = timeStr;
+  }
+  updateTime();
+  setInterval(updateTime, 1000);
+</script>
+</body>
+</html>
