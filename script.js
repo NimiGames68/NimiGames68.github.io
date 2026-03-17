@@ -62,7 +62,7 @@ async function loadMusic() {
     var durationHtml = duration   ? '<span class="music-duration">Song Duration - ' + duration + '</span>' : "";
 
     var googleLyrics = "https://www.google.com/search?q=" + encodeURIComponent(title + " " + artist + " letras");
-    var youtubeUrl   = "https://www.youtube.com/results?search_query=" + encodeURIComponent(title + " " + artist);
+    var youtubeUrl   = "https://music.youtube.com/search?q=" + encodeURIComponent(title + " " + artist);
 
     document.getElementById("music-widget").innerHTML =
       '<div class="music-status">' + statusText + '</div>' +
