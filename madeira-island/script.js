@@ -6,7 +6,7 @@ var MUNICIPALITIES = [
   { name: "Ponta do Sol",     freguesias: ["Canhas","Madalena do Mar","Ponta do Sol"] },
   { name: "Porto Moniz",      freguesias: ["Achadas da Cruz","Porto Moniz","Ribeira da Janela","Seixal"] },
   { name: "Porto Santo",      freguesias: ["Porto Santo"] },
-  { name: "Ribeira Brava",    freguesias: ["Campanário","Ribeira Brava","Serra de Água","Tábua"] },
+  { name: "Ribeira Brava",    freguesias: ["Campanário","Ribeira Brava","Serra de Água","Tabua"] },
   { name: "Santa Cruz",       freguesias: ["Camacha","Caniço","Gaula","Santa Cruz","Santo António da Serra (Santa Cruz)"] },
   { name: "Santana",          freguesias: ["Arco de São Jorge","Faial","Ilha","Santana","São Jorge"] },
   { name: "São Vicente",      freguesias: ["Boaventura","Ponta Delgada","São Vicente"] }
