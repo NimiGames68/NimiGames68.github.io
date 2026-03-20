@@ -60,7 +60,7 @@ var WIKI = {
   "Campanário":                         "Campan%C3%A1rio,_Madeira",
   "Ribeira Brava":                      "Ribeira_Brava,_Madeira",
   "Serra de Água":                      "Serra_de_%C3%81gua",
-  "Tábua":                              "Tabua,_Madeira",
+  "Tabua":                              "Tabua,_Madeira",
   // Santa Cruz
   "Camacha":                            "Camacha",
   "Caniço":                             "Cani%C3%A7o",
