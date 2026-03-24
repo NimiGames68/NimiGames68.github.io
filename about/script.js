@@ -1,10 +1,9 @@
-// Stagger card animations
+
 document.querySelectorAll('.card').forEach(function(card, i) {
   card.style.animationDelay = (0.1 + i * 0.08) + 's';
   card.addEventListener('animationend', function() { card.style.opacity = '1'; });
 });
 
-// APIs by page — update this as the site grows
 var PAGES = [
   {
     name: 'Homepage',
@@ -19,7 +18,7 @@ var PAGES = [
     url: 'https://nimigames68.github.io/madeira-island/',
     apis: [
       { name: 'Open-Meteo', url: 'https://open-meteo.com', desc: 'Current weather and temperature for Funchal, Madeira.' },
-      { name: 'OpenStreetMap / Leaflet', url: 'https://www.openstreetmap.org', desc: 'Interactive map of the island.' },
+      { name: 'OpenStreetMap', url: 'https://www.openstreetmap.org', desc: 'Interactive map of the island.' },
       { name: 'Wikipedia REST API', url: 'https://en.wikipedia.org/api/rest_v1/', desc: 'Fetches the coat of arms for each parish via page thumbnails.' },
     ]
   },
