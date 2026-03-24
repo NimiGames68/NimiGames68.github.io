@@ -28,7 +28,6 @@ footer a:hover { color: var(--accent); }
 
 .section-divider { border: none; border-top: 1px solid #2e2e2e; margin: 2.8rem 0; }
 
-/* ACCORDION — same as madeira page */
 .accordion { display: flex; flex-direction: column; gap: .4rem; }
 .acc-item { border: 1px solid #1e1e1e; border-radius: 8px; overflow: hidden; }
 .acc-header { width: 100%; background: #161616; border: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; padding: .65rem 1rem; font-family: 'JetBrains Mono', monospace; font-size: .82rem; font-weight: 600; color: var(--text); transition: background .2s, color .2s; text-align: left; }
@@ -39,14 +38,12 @@ footer a:hover { color: var(--accent); }
 .acc-body { max-height: 0; overflow: hidden; transition: max-height .3s ease; background: #0e1610; }
 .acc-body-inner { padding: .65rem 1rem .8rem; }
 
-/* API rows */
 .acc-api-list { display: flex; flex-direction: column; gap: .6rem; }
 .api-row { display: flex; flex-direction: column; gap: .15rem; }
 .api-name { font-size: .78rem; font-weight: 600; color: var(--accent); text-decoration: none; transition: opacity .2s; }
 .api-name:hover { opacity: .75; }
 .api-desc { font-size: .72rem; color: var(--muted); line-height: 1.5; }
 
-/* LOVE BLOCK */
 .love-block {
   background: #141414;
   border: 1px solid #1e1e1e;
