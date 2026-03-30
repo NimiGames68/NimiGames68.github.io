@@ -13,8 +13,8 @@ import {
   getUserTrophyProfileSummary
 } from "psn-api";
 
-const NPSSO = process.env.NPSSO; // guarda o NPSSO como secret no Vercel
-const PSN_USERNAME = process.env.PSN_USERNAME; // idem para username
+const NPSSO = process.env.NPSSO;
+const PSN_USERNAME = process.env.PSN_USERNAME;
 
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -23,14 +23,14 @@ export default async function handler(req, res) {
   if (!NPSSO || !PSN_USERNAME) {
     return res
       .status(500)
-      .json({ error: "NPSSO ou username não definido nas env vars" });
+      .json({ error: "not defined username or NPSSO" });
   }
 
   try {
-    console.log("🔐 A autenticar...");
+    console.log("authenticating...");
     const accessCode = await exchangeNpssoForAccessCode(NPSSO);
     const authTokens = await exchangeAccessCodeForAuthTokens(accessCode);
-    console.log("✅ Auth OK");
+    console.log("Auth with success");
 
     const [
       gamesRes,
@@ -66,8 +66,8 @@ export default async function handler(req, res) {
         screenshot: latestGame.media?.screenshotUrl,
         status:
           diff < 10
-            ? "A jogar agora"
-            : `Jogaste há ${Math.floor(diff)} min`
+            ? "Now Playing"
+            : `Last played ${Math.floor(diff)} min`
       };
     }
 
@@ -90,7 +90,7 @@ export default async function handler(req, res) {
 
     return res.status(200).json(psnData);
   } catch (err) {
-    console.error("💀 ERRO:", err);
+    console.error("error:", err);
     return res.status(500).json({ error: err.message });
   }
 }
