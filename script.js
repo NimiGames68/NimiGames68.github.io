@@ -6,7 +6,7 @@ var _currentArtist = '';
 async function getDeezerData(title, artist) {
   try {
     var res = await fetch(
-      "https://nimigames-lastfm-proxy-api.vercel.app/api/deezer?q=" + encodeURIComponent(title + " " + artist)
+      "https://nimigames68-music.vercel.app/api/deezer?q=" + encodeURIComponent(title + " " + artist)
     );
     var data = await res.json();
     if (data.data && data.data.length > 0) return data.data[0];
