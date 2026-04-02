@@ -163,7 +163,7 @@ function showDurationTooltip(btn) {
 
 async function loadMusic() {
   try {
-    var res = await fetch("https://nimigames-lastfm-proxy-api.vercel.app/api/lastfm");
+    var res = await fetch("https://nimigames68-music.vercel.app/api/lastfm");
     var data = await res.json();
     var track = data.recenttracks.track[0];
 
